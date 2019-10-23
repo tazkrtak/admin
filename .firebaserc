@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "tazkrtak"
+  },
+  "targets": {
+    "tazkrtak": {
+      "hosting": {
+        "admin": [
+          "tazkrtak-admin"
+        ]
+      }
+    }
+  }
+}

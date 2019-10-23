@@ -1,0 +1,13 @@
+# Site settings
+title               : Tazkrtak
+description         : An admin web view to manage Tazkrtak apps.
+url                 : "https://tazkrtak-admin.web.app"
+
+# Build settings
+markdown            : kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - debug.log
+  - firebase.json
