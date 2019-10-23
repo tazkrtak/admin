@@ -1,6 +1,6 @@
 # Site settings
-title               : Tazkrtak
-description         : An admin web view to manage Tazkrtak apps.
+title               : تذكرتك
+description         : متابعة برامج تذكرتك عن طريق متصفح الإنترنت
 url                 : "https://tazkrtak-admin.web.app"
 
 # Build settings

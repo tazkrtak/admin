@@ -4,10 +4,15 @@
 
 {% include head.html %}
 
-<body class="bg-dark">
+<body>
 
-  <div class="container text-white text-center p-5 my-5">
-    {{ content }}
+  {% include navbar.html %}
+
+  <div id="wrapper">
+    {% include sidebar.html %}
+    <div class="container-fluid py-3 px-5">
+      {{ content }}
+    </div>
   </div>
 
   {% include scripts.html %}
