@@ -2,21 +2,21 @@
 ---
 
 {% for interval in site.data.usage-charts.intervals %}
-fetchData("{{ interval.endpoint }}").then(data => {
+fetchUsageData("{{ interval.endpoint }}").then(data => {
     const x = data.map(month => month.number);
     const y = data.map(month => month.usage);
-    createChart("{{ interval.id }}-chart", x, y);
+    createUsageChart("{{ interval.id }}-chart", x, y);
   });
 {% endfor %}
 
-async function fetchData(interval) {
+async function fetchUsageData(interval) {
   const root = "{{ site.root-endpoint }}";
   const endpoint = "{{ site.data.usage-charts.endpoint }}";
   const response = await fetch(`${root}${endpoint}/${interval}`);
   return await response.json();
 }
 
-function createChart(name, xData, yData) {
+function createUsageChart(name, xData, yData) {
   var ctx = document.getElementById(name).getContext("2d");
 
   var gradient = ctx.createLinearGradient(0, 0, 0, 450);
