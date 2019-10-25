@@ -1,5 +1,14 @@
 ---
 layout: default
 ---
-<h1 class="font-weight-bold">{{ site.title }}</h1>
-<p class="text-monospace">{{ site.description }}</h1>
+
+<div class="row justify-content-center">
+  <div class="col-lg-8">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">{{ site.data.usage-charts.title }}</h5>
+        {% include usage-charts.html %}
+      </div>
+    </div>
+  </div>
+</div>

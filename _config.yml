@@ -2,6 +2,7 @@
 title               : تذكرتك
 description         : متابعة برامج تذكرتك عن طريق متصفح الإنترنت
 url                 : "https://tazkrtak-admin.web.app"
+root-endpoint       : "https://my-json-server.typicode.com/tazkrtak/counterfeit"
 
 # Build settings
 markdown            : kramdown

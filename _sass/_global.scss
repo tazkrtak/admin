@@ -3,3 +3,12 @@ body {
   text-align: right;
   font-family: "Cairo", sans-serif;
 }
+
+.nav-pills > .active {
+  background-color: $primary-color;
+  color: white !important;
+}
+
+.nav-pills > a {
+  color: $primary-color;
+}

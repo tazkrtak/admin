@@ -1,0 +1,9 @@
+title: الاستخدام
+endpoint: ""
+intervals:
+  - name: شهر
+    id: months
+    endpoint: "/months"
+  - name: سنة
+    id: years
+    endpoint: "/years"
