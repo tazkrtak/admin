@@ -1,0 +1,15 @@
+- name: المستخدمون
+  id: users
+  endpoint: "/users-count"
+
+- name: الدخل
+  id: income
+  endpoint: "/users-count"
+
+- name: الحافلات
+  id: buses
+  endpoint: "/buses-count"
+
+- name: المفتشون
+  id: collectors
+  endpoint: "/buses-count"

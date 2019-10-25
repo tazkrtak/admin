@@ -1,0 +1,12 @@
+<div class="card-deck mt-3">
+
+  {% for counter in site.data.counters %}
+  <div class="card border border-success">
+    <div class="card-body">
+      <h5 class="card-title">{{ counter.name }}</h5>
+      <h2 id="{{ counter.id }}-counter" class="card-text text-success font-weight-bold">...</h2>
+    </div>
+  </div>
+  {% endfor %}
+
+</div>
