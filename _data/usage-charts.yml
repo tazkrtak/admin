@@ -1,5 +1,5 @@
 title: الاستخدام
-endpoint: ""
+endpoint: "/transactions"
 intervals:
   - name: شهر
     id: months

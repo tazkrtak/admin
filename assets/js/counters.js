@@ -3,7 +3,7 @@
 
 {% for counter in site.data.counters %}
 fetchCounterData("{{ counter.endpoint }}").then(data => {
-  new CountUp("{{ counter.id }}-counter", 0, data.value, 0, 1).start();
+  new CountUp("{{ counter.id }}-counter", 0, data.total, 0, 1).start();
 });
 {% endfor %}
 

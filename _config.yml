@@ -1,8 +1,8 @@
 # Site settings
 title               : تذكرتك
 description         : متابعة برامج تذكرتك عن طريق متصفح الإنترنت
-url                 : "https://tazkrtak-admin.web.app"
-root-endpoint       : "https://my-json-server.typicode.com/tazkrtak/counterfeit"
+url                 : https://tazkrtak-admin.web.app
+root-endpoint       : https://tazkrtak-api.web.app
 
 # Build settings
 markdown            : kramdown

@@ -1,15 +1,15 @@
 - name: المستخدمون
   id: users
-  endpoint: "/users-count"
+  endpoint: "/users/total"
 
 - name: الدخل
   id: income
-  endpoint: "/users-count"
+  endpoint: "/transactions/income"
 
 - name: الحافلات
   id: buses
-  endpoint: "/buses-count"
+  endpoint: "/buses/total"
 
-- name: المفتشون
+- name: الموظفون
   id: collectors
-  endpoint: "/buses-count"
+  endpoint: "/staff/total"

@@ -14,7 +14,7 @@ fetchBusesData().then(data => {
 });
 
 async function fetchBusesData() {
-  const root = "{{ site.root-endpoint }}";
+  const root = "https://my-json-server.typicode.com/tazkrtak/counterfeit";
   const endpoint = "{{ site.data.buses-charts.endpoint }}";
   const response = await fetch(`${root}${endpoint}`);
   return await response.json();

@@ -3,8 +3,8 @@
 
 {% for interval in site.data.usage-charts.intervals %}
 fetchUsageData("{{ interval.endpoint }}").then(data => {
-    const x = data.map(month => month.number);
-    const y = data.map(month => month.usage);
+    const x = data.map(interval => interval.name);
+    const y = data.map(interval => interval.transactions);
     createUsageChart("{{ interval.id }}-chart", x, y);
   });
 {% endfor %}
@@ -12,7 +12,7 @@ fetchUsageData("{{ interval.endpoint }}").then(data => {
 async function fetchUsageData(interval) {
   const root = "{{ site.root-endpoint }}";
   const endpoint = "{{ site.data.usage-charts.endpoint }}";
-  const response = await fetch(`${root}${endpoint}/${interval}`);
+  const response = await fetch(`${root}${endpoint}${interval}`);
   return await response.json();
 }
 
